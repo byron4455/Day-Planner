@@ -1,2 +1,9 @@
-var a = moment().format('LT');
-console.log(a);
+var hour = moment().format('H');
+
+var hourNum = parseInt(hour);
+console.log(hourNum);
+
+if (hourNum === 22) {
+$("#hour-9").removeClass("future");
+$("#hour-9").addClass("past")
+};
